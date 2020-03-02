@@ -17,6 +17,29 @@ vue-cli >= 3
 
 內容不變 樣式變 有 Reset CSS
 
+## Deploy
+
+`yarn add gh-pages --save-dev`  `yarn add gh-pages -D`  
+
+[Command Line Utility](https://www.npmjs.com/package/gh-pages)
+
+package.json
+
+```js
+"homepage": "https://jacobhsu.github.io/vue-cli-cube-ui/",
+"scripts": {
+  "deploy": "yarn build && gh-pages -d dist"
+}
+```
+
+vue.config.js
+
+```js
+module.exports = {
+    publicPath: process.env.NODE_ENV === 'production' ? '/vue-cli-cube-ui' : '/',
+}
+```
+
 ## Project setup
 ```
 yarn install

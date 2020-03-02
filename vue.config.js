@@ -1,5 +1,6 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? 'vue-cli-cube-ui' : '/',
+  // 200ok publicPath: process.env.NODE_ENV === 'production' ? '/dist' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/vue-cli-cube-ui' : '/',
   css: {
     loaderOptions: {
       stylus: {
